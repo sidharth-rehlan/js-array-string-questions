@@ -1,0 +1,28 @@
+.toggle-btn {
+  display: inline-block;
+  position: relative;
+}
+
+.toggle-btn span {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+}
+/* .toggle-btn-on {
+  background: red;
+}
+.toggle-btn-off {
+  background: grey;
+} */
+
+.toggle-btn input {
+  opacity: 0;
+}
+
+input:checked ~ span.toggle-btn-on {
+  background: red;
+}
+input:checked ~ span.toggle-btn-off {
+  background: grey;
+}
